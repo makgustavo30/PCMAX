@@ -1,0 +1,3 @@
+Esta carpeta contiene lo relacionado a las pruebas.
+o PL_PRUE_UNITARIAS. Carpeta que contiene los casos de prueba.
+o RE_PRUE_UNITARIAS. Carpeta que contiene los reporte de pruebas unitarias.

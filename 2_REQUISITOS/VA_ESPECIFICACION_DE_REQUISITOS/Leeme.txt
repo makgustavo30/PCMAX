@@ -1,0 +1,1 @@
+Esta una carpeta que contiene los reportes de validación de la especificación de requisitos.

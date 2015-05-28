@@ -1,0 +1,4 @@
+Esta una carpeta que contiene:
+o EQUIPO_DE_TRABAJO. Documento en MS Word que contiene lo relacionado al equipo de trabajo: Integrantes, roles y responsabilidades que desempeñan.
+o APERTURA_DE_ESCUELA_PRACTICA. Documento digitalizado del acta de inicio de escuela práctica, en PDF.
+o DESCRIPCION_DEL_PROYECTO. Documento en MS Word de la descripción del proyecto.

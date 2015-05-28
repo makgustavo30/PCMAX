@@ -1,0 +1,3 @@
+Esta carpeta contiene:
+o BASE_DE_DATOS. Carpeta que contiene el archivo(s) de la base de datos.
+o CODIGO. Carpeta que contiene el código fuente de la aplicación.

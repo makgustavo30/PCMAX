@@ -1,0 +1,1 @@
+Esta una carpeta que contiene el diagrama o diagramas de secuencia.

@@ -1,0 +1,5 @@
+Carpeta que contiene lo relacionado al manual de
+instalación.
+- RECURSOS. Carpeta que contiene recursos utilizados para realizar el
+manual como las imágenes.
+- MA_DE_INSTALACION. Documento del manual de instalación.

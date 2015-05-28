@@ -1,0 +1,2 @@
+Carpeta que contiene recursos utilizados para realizar el
+manual como las imágenes.

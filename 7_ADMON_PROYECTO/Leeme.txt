@@ -1,0 +1,20 @@
+Carpeta que contiene los documentos relacionados a la
+administración del proyecto.
+o BITACORAS. Es una carpeta que contiene:
+- PARCIAL_1. Carpeta que contiene:
+- MINUTAS. Carpeta que contiene las minutas correspondientes al
+Parcial 1.
+- BITACORA_1P. Documento de la bitácora correspondiente al
+Parcial 1.
+- PARCIAL_2. Carpeta que contiene:
+- MINUTAS. Carpeta que contiene las minutas correspondientes al
+Parcial 2.
+- BITACORA_2P. Documento de la bitácora correspondiente al
+Parcial 2.
+- PARCIAL_3. Carpeta que contiene:
+- MINUTAS. Carpeta que contiene las minutas correspondientes al
+Parcial 3.
+- BITACORA_3P. Documento de la bitácora correspondiente al
+Parcial 3.
+o CRONOGRAMA. Documento en MS Project del cronograma de actividades del
+proyecto.

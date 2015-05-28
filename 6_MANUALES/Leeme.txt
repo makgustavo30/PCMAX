@@ -1,0 +1,10 @@
+Esta carpeta contiene:
+o MA_DE_USUARIO. Carpeta que contiene lo relacionado al manual de usuario:
+- RECURSOS. Carpeta que contiene recursos utilizados para realizar el
+manual como las imágenes.
+o MA_DE_USUARIO. Documento del manual de usuario.
+o MA_DE_INSTALACION. Carpeta que contiene lo relacionado al manual de
+instalación.
+- RECURSOS. Carpeta que contiene recursos utilizados para realizar el
+manual como las imágenes.
+o MA_DE_INSTALACION. Documento del manual de instalación.

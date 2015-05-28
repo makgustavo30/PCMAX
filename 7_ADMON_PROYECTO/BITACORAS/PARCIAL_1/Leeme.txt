@@ -1,0 +1,5 @@
+Carpeta que contiene:
+- MINUTAS. Carpeta que contiene las minutas correspondientes al
+Parcial 1.
+- BITACORA_1P. Documento de la bitácora correspondiente al
+Parcial 1.

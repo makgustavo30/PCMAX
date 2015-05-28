@@ -1,0 +1,4 @@
+Carpeta que contiene:
+o CIERRE_DE_ESCUELA_PRACTICA. Documento digitalizado del acta de cierre de
+escuela práctica, en PDF.
+o LECCIONES_APRENDIDAS. Documento de MS Word de las lecciones aprendidas.

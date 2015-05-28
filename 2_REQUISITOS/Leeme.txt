@@ -1,0 +1,4 @@
+Esta una carpeta que contiene:
+o VA_ESPECIFICACION_DE_REQUISITOS. Es una carpeta que contiene los reportes de validación de la especificación de requisitos.
+o ESPECIFICACION_DE_REQUISITOS. Es el documento en MS Word de la especificación de requisitos.
+o GLOSARIO. Documento en MS Word que contiene la definición de las palabras propias (argot) del dominio de la aplicación.

@@ -1,0 +1,4 @@
+Carpeta que contiene lo relacionado al manual de usuario:
+- RECURSOS. Carpeta que contiene recursos utilizados para realizar el
+manual como las imágenes.
+- MA_DE_USUARIO. Documento del manual de usuario.

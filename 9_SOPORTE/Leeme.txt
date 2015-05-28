@@ -1,0 +1,4 @@
+Es una carpeta que contiene carpetas y archivos de soporte para el desarrollo
+del proyecto. Por ejemplo las siguientes carpetas:
+o TUTORIALES. Carpeta para guardar tutoriales.
+o PLANTILLAS. Carpeta que contiene las plantillas de los
