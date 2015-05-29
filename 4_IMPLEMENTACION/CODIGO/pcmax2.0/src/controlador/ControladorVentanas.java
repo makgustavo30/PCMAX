@@ -49,7 +49,7 @@ public class ControladorVentanas {
 	}
 	
 	/*
-	 * asignar el manu principal de la ventana
+	 * asignar el menu principal de la ventana
 	 */
 	
 	public void asignarMenu(String ruta, String titulo){
@@ -86,6 +86,20 @@ public class ControladorVentanas {
 	}	
 	
 	public void asignarCentro(String ruta){
+		try{
+			FXMLLoader interfaz = new FXMLLoader(getClass().getResource(ruta));
+			subcontenedorDialog = (AnchorPane)interfaz.load();
+			contenedorDialog.setCenter(subcontenedorDialog);
+			Stage dialogEscenario = Principal.getPrimaryStage();
+			//Scene escena = new Scene(contenedorDialog);
+			dialogEscenario.setScene(escena);
+			dialogEscenario.show();			
+		}catch (Exception e){
+			e.printStackTrace();
+		}	
+	}	
+	
+	public void asignarCentro2(String ruta){
 		try{
 			FXMLLoader interfaz = new FXMLLoader(getClass().getResource(ruta));
 			subcontenedorDialog = (AnchorPane)interfaz.load();

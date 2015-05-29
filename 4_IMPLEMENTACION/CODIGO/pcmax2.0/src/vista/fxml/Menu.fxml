@@ -26,7 +26,7 @@
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" text="Servicios">
+            <Button fx:id="btnServicios" mnemonicParsing="false" onAction="#abrirServicios" prefHeight="51.0" prefWidth="148.0" text="Servicios">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -38,7 +38,7 @@
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" text="Clientes">
+            <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#abrirClientes" prefHeight="51.0" prefWidth="148.0" text="Clientes">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
