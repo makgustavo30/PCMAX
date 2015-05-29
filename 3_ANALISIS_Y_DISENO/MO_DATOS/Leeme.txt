@@ -1,0 +1,4 @@
+Esta una carpeta que contiene lo relacionado al modelado de datos:
+- DIA_RELACIONAL. Es el documento del diagrama relacional de la base de datos.
+- DIA_ENTIDAD_RELACION. Es el documento del diagrama Entidad-Relación.
+- DICCIONARIO_DE_DATOS. Es el documento del diccionario de datos de la base de datos.

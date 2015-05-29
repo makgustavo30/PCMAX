@@ -1,0 +1,10 @@
+Esta una carpeta que contiene los productos generados en el análisis y diseño:
+o CASOS_DE_USO. Es una carpeta que contiene lo relacionado a los casos de uso.
+- DIAGRAMA. Documento con el diagrama o diagramas de casos de uso.
+- DESCRIPCIONES. Es una carpeta que contiene los documentos en MS Word de las descripciones de los casos de uso.
+o DIA_DE_CLASES. Es una carpeta que contiene el diagrama o diagramas de clases.
+o DIA_DE_SECUENCIA. Es una carpeta que contiene el diagrama o diagramas de secuencia.
+o MO_DATOS. Es una carpeta que contiene lo relacionado al modelado de datos:
+- DIA_RELACIONAL. Es el documento del diagrama relacional de la base de datos.
+- DIA_ENTIDAD_RELACION. Es el documento del diagrama Entidad-Relación.
+- DICCIONARIO_DE_DATOS. Es el documento del diccionario de datos de la base de datos.
