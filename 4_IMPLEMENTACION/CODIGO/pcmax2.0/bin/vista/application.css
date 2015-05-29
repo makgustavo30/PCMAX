@@ -11,15 +11,36 @@
     -fx-padding: 10 20 10 20;
 }
 
+.dark-blue:hover{
+	-fx-background-color: 
+        linear-gradient(#ec5454, #f91818),
+        linear-gradient(#ec5454 0%, #fd6969 20%, #f91818 100%),
+        linear-gradient(#ec5454 0%, #f81717 50%);
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+
 .stilo4{
 	-fx-text-fill: black;
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
     -fx-font-family: "Arial";
     -fx-text-fill: linear-gradient(white, #d0d0d0);
-    -fx-font-size: 14px;
+    -fx-font-size: 15px;
 }
 
 .bp {
  -fx-background-color:  linear-gradient(gray,DimGrey );
   -fx-text-fill: white;
+   -fx-font-family: "Arial";
+   -fx-font-size: 15px;
+}
+
+.stilologin{
+	-fx-background-color:  #D5CFCF;
 }

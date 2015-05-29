@@ -9,12 +9,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorMenu">
    <top>
       <ToolBar prefHeight="74.0" prefWidth="1159.0" BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" text="Ventas">
+          <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Ventas">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -26,7 +25,7 @@
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnServicios" mnemonicParsing="false" onAction="#abrirServicios" prefHeight="51.0" prefWidth="148.0" text="Servicios">
+            <Button fx:id="btnServicios" mnemonicParsing="false" onAction="#abrirServicios" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Servicios">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -38,7 +37,7 @@
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#abrirClientes" prefHeight="51.0" prefWidth="148.0" text="Clientes">
+            <Button fx:id="btnClientes" mnemonicParsing="false" onAction="#abrirClientes" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Clientes">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
@@ -50,7 +49,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" text="Proveedores">
+            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Proveedores">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
@@ -62,7 +61,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" text="Productos">
+            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Productos">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
@@ -78,37 +77,33 @@
       </ToolBar>
    </top>
    <center>
-      <ImageView fitHeight="638.0" fitWidth="1126.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../imagenes/maxresdefault.jpg" />
-         </image>
-         <BorderPane.margin>
-            <Insets left="1115.0" />
-         </BorderPane.margin>
-      </ImageView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="638.0" fitWidth="1126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/maxresdefault.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="520.0" layoutX="14.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+               <effect>
+                  <Reflection>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Reflection>
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </center>
-   <right>
-      <ImageView fitHeight="126.0" fitWidth="516.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets right="600.0" top="300.0" />
-         </BorderPane.margin>
-         <image>
-            <Image url="@../imagenes/logodibujos.png" />
-         </image>
-         <effect>
-            <Reflection>
-               <input>
-                  <Lighting>
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant />
-                     </light>
-                  </Lighting>
-               </input>
-            </Reflection>
-         </effect>
-      </ImageView>
-   </right>
 </BorderPane>
