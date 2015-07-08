@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="E:/Respaldo TAVO HP/DA1/postgresql-9.4-1201.jdbc4.jar"/>
-	<classpathentry kind="lib" path="E:/Respaldo TAVO HP/DA1/jfxrt.jar"/>
-	<classpathentry kind="lib" path="E:/Respaldo TAVO HP/DA1/javafx-dialogs-0.0.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/Respaldo TAVO HP/DA1/controlsfx-8.20.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Orbezo/workspace/pcmax2.0/controlsfx-8.20.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Orbezo/workspace/pcmax2.0/extfx-0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Orbezo/workspace/pcmax2.0/javafx-dialogs-0.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Orbezo/workspace/pcmax2.0/postgresql-9.2-1000.jdbc4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

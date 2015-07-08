@@ -13,9 +13,9 @@
       <Label fx:id="lblMensaje" prefHeight="27.0" prefWidth="411.0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <Accordion prefHeight="363.0" prefWidth="501.0" BorderPane.alignment="CENTER">
+      <Accordion fx:id="acord" prefHeight="363.0" prefWidth="501.0" BorderPane.alignment="CENTER">
         <panes>
-          <TitledPane animated="false" text="Login">
+          <TitledPane fx:id="tpLogin" animated="false" text="Login">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="stilologin">
                      <children>

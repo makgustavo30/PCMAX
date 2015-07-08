@@ -19,7 +19,7 @@ public class Conexion {
 	 */
 	
 	private Conexion(){
-		bd = "pcmax";
+		bd = "pcmax2.1";
 		usuario = "postgres";
 		contrasenia = "maki3001";
 		puerto = "5432";

@@ -131,7 +131,7 @@
           <Tab text="Untitled Tab 2" />
         </tabs>
       </TabPane>
-      <Label layoutX="64.0" layoutY="44.0" text="Clientes">
+      <Label layoutX="64.0" layoutY="44.0" text="Clientes" AnchorPane.bottomAnchor="555.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="705.0" AnchorPane.topAnchor="44.0">
          <font>
             <Font name="Arial Black" size="80.0" />
          </font>

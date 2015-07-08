@@ -2,9 +2,14 @@ package controlador;
 
 
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import vista.Principal;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.control.Accordion;
 import javafx.scene.control.Dialogs;
 import javafx.scene.control.Dialogs.DialogOptions;
 import javafx.scene.control.Dialogs.DialogResponse;
@@ -18,7 +23,7 @@ import javafx.util.Callback;
 import modelo.Conexion;
 import modelo.Usuario;
 
-public class ControladorConexion {
+public class ControladorConexion implements Initializable {
 	/*
 	 * Atributos de la clase
 	 */
@@ -41,7 +46,8 @@ public class ControladorConexion {
 	@FXML TextField txtUser;
 	@FXML PasswordField txtCon;
 	@FXML Label lblMensaje;
-	@FXML TitledPane tpServidor;
+	@FXML TitledPane tpServidor, tpLogin;
+	@FXML Accordion acord;
 	
 	/*
 	 * Método asociado al boton para establecer conexión
@@ -104,7 +110,7 @@ public class ControladorConexion {
 			if(resultado){
 				ventanas = ControladorVentanas.getInstancia();
 				ventanas.setPrimaryStage(Principal.getPrimaryStage());
-				ventanas.asignarEscena("../vista/fxml/Menu.fxml","MENU Principal");
+				ventanas.asignarEscena("../vista/fxml/Menu.fxml","MENU Principal",modeloUsuario.getPrivilegio());
 				System.out.println("Existe el usuario es: " + modeloUsuario.getPrivilegio());
 			}
 			else
@@ -137,6 +143,13 @@ public class ControladorConexion {
 				return null;
 			}
 			};
+	}
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		// TODO Auto-generated method stub
+		acord.setExpandedPane(tpLogin);
+		
 	}
 	
 }

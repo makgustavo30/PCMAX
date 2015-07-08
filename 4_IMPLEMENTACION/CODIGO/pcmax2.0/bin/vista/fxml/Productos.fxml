@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorProducto">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" stroke="BLACK" strokeType="INSIDE" width="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <RadialGradient centerX="0.3111111111111111" centerY="0.8" radius="0.686046511627907">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="167.0" fitWidth="128.0" layoutX="990.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/robot49.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="-3.0" text="Productos" AnchorPane.topAnchor="-3.0">
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ToolBar layoutX="3.0" layoutY="57.0" prefHeight="66.0" prefWidth="977.0" AnchorPane.topAnchor="57.0">
+        <items>
+          <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_insertar" prefHeight="69.0" prefWidth="124.0" text="Guardar" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/guardar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_actualizar" prefHeight="69.0" prefWidth="124.0" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/editar%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnEliminar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_eliminar" prefHeight="69.0" prefWidth="124.0" text="Eliminar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="53.0" fitWidth="321.0" pickOnBounds="true" translateX="150.0">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+        </items>
+      </ToolBar>
+      <Label layoutX="14.0" layoutY="151.0" text="Codigo:" />
+      <TextField fx:id="txtID" layoutX="73.0" layoutY="147.0" prefHeight="25.0" prefWidth="135.0" />
+      <ComboBox fx:id="cbCategoria" layoutX="624.0" layoutY="147.0" prefHeight="25.0" prefWidth="171.0" promptText="Selecciona categoria" />
+      <Label layoutX="557.0" layoutY="151.0" text="Categoria:" />
+      <Label layoutX="575.0" layoutY="204.0" text="Marca:" />
+      <ComboBox fx:id="cbMarca" layoutX="624.0" layoutY="200.0" prefHeight="25.0" prefWidth="171.0" promptText="Selecciona Marca" />
+      <Label layoutX="636.0" layoutY="255.0" text="Numero de parte:" />
+      <TextField fx:id="txtNumParte" layoutX="742.0" layoutY="251.0" prefHeight="25.0" prefWidth="199.0" />
+      <Label layoutX="196.0" layoutY="185.0" text="Descripción:" />
+      <TextArea fx:id="txtDescripcion" layoutX="271.0" layoutY="149.0" prefHeight="88.0" prefWidth="250.0" />
+      <Label layoutX="15.0" layoutY="187.0" text="Existencias:" />
+      <TextField fx:id="txtExistencias" layoutX="81.0" layoutY="183.0" prefHeight="25.0" prefWidth="94.0" />
+      <TextField fx:id="txtPrecio1" layoutX="61.0" layoutY="253.0" />
+      <TextField fx:id="txtPrecio2" layoutX="258.0" layoutY="253.0" />
+      <TextField fx:id="txtPrecio3" layoutX="448.0" layoutY="253.0" />
+      <Label layoutX="17.0" layoutY="226.0" text="Precio:" />
+      <Label layoutX="54.0" layoutY="257.0" text="\$" />
+      <Label layoutX="251.0" layoutY="257.0" text="\$" />
+      <Label layoutX="441.0" layoutY="257.0" text="\$" />
+      <Label layoutX="111.0" layoutY="278.0" text="(Precio 1)" />
+      <Label layoutX="308.0" layoutY="278.0" text="(Precio 2)" />
+      <Label layoutX="497.0" layoutY="278.0" text="(Precio 3)" />
+      <Label layoutX="961.0" layoutY="195.0" text="Stock:" />
+      <Label layoutX="1028.0" layoutY="269.0" text="(Minimo)" />
+      <Label layoutX="1026.0" layoutY="216.0" text="(Maximo)" />
+      <TextField fx:id="txtStockMax" layoutX="1019.0" layoutY="191.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtStockMin" layoutX="1019.0" layoutY="244.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button fx:id="btnCategoria" layoutX="818.0" layoutY="147.0" mnemonicParsing="false" onAction="#clickCategoria" text="Agregar categoria" />
+      <Button fx:id="btnMarca" layoutX="826.0" layoutY="199.0" mnemonicParsing="false" onAction="#clickMarca" text="Agregar marca" />
+      <TableView fx:id="tvProductos" layoutX="16.0" layoutY="302.0" onMouseClicked="#click_TableView" prefHeight="223.0" prefWidth="1099.0">
+        <columns>
+          <TableColumn fx:id="tcCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="tcDescripcion" prefWidth="328.0" text="Descripción" />
+            <TableColumn fx:id="tcMarca" text="Marca" />
+            <TableColumn fx:id="tcCategoria" prefWidth="120.0" text="Categoria" />
+            <TableColumn fx:id="tcNumParte" prefWidth="172.0" text="Num. de parte" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtBuscador" layoutX="809.0" layoutY="17.0" onKeyReleased="#buscarTexto" promptText="Buscar producto..." AnchorPane.leftAnchor="809.0" AnchorPane.topAnchor="17.0" />
+      <Pagination fx:id="paginador" layoutX="15.0" layoutY="299.0" pageCount="8100" prefHeight="270.0" prefWidth="1099.0" />
+      <Label fx:id="lblMensaje2" layoutX="73.0" layoutY="539.0" prefHeight="17.0" prefWidth="310.0" />
+      <Label fx:id="lblMensaje" layoutX="369.0" layoutY="33.0" prefHeight="17.0" prefWidth="356.0" />
+      <ImageView fitHeight="43.0" fitWidth="94.0" layoutX="763.0" layoutY="8.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@../imagenes/buscar%20(2).png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="ckbRegistrosInactivos" layoutX="803.0" layoutY="530.0" mnemonicParsing="false" onAction="#click_inactivos" text="Mostrar registros inactivos" />
+   </children>
+</AnchorPane>

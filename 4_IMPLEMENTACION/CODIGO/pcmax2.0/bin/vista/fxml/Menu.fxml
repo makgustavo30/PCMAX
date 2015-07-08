@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorMenu">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorMenu">
    <top>
       <ToolBar prefHeight="74.0" prefWidth="1159.0" BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Ventas">
+          <Button fx:id="btnVentas" mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Ventas">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -49,7 +49,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Proveedores">
+            <Button fx:id="btnProveedores" mnemonicParsing="false" onAction="#abrirProveedores" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Proveedores">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
@@ -61,7 +61,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Productos">
+            <Button fx:id="btnProducto" mnemonicParsing="false" onAction="#abrirProductos" prefHeight="51.0" prefWidth="148.0" styleClass="dark-blue" text="Productos">
                <font>
                   <Font name="Arial Bold Italic" size="15.0" />
                </font>
@@ -73,18 +73,22 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button fx:id="btnCategoria" mnemonicParsing="false" onAction="#abrirCategorias" prefHeight="51.0" prefWidth="148.0" text="Categoria">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
         </items>
       </ToolBar>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="647.0" prefWidth="1109.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="638.0" fitWidth="1126.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="568.0" fitWidth="1028.0" layoutX="49.9420166015625" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="68.30364990234375">
                <image>
                   <Image url="@../imagenes/maxresdefault.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="120.0" fitWidth="520.0" layoutX="14.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="120.0" fitWidth="520.0" layoutX="58.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/logodibujos.png" />
                </image>
