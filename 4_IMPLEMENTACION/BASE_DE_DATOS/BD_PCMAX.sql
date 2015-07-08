@@ -1,116 +1,494 @@
-﻿
+﻿/*
+Created: 20/05/2015
+Modified: 30/06/2015
+Model: PostgreSQL 9.2
+Database: PostgreSQL 9.2
+*/
 
-CREATE TABLE usuario(id_usuario INT PRIMARY KEY NOT NULL,nombre VARCHAR(25) NOT NULL,apellido_paterno VARCHAR(25) NOT 
 
-NULL,apellido_materno VARCHAR(25) NOT NULL,calle 
+-- Create tables section -------------------------------------------------
 
-VARCHAR(20) NULL,avenida VARCHAR(20) NULL,numero VARCHAR(10) NULL,colonia VARCHAR(25) NULL,codigo_postal INT NULL,ciudad 
+-- Table usuario
 
-VARCHAR(25) NOT NULL,telefono VARCHAR(20) 
+CREATE TABLE "usuario"(
+ "id_usuario" Integer NOT NULL,
+ "nombre" Character varying(25) NOT NULL,
+ "apellido_paterno" Character varying(25) NOT NULL,
+ "apellido_materno" Character varying(25) NOT NULL,
+ "calle" Character varying(20),
+ "avenida" Character varying(20),
+ "numero" Character varying(20),
+ "colonia" Character varying(25),
+ "codigo_postal" Integer,
+ "ciudad" Character varying(25) NOT NULL,
+ "telefono" Character varying(20) NOT NULL,
+ "email" Character varying(30) NOT NULL,
+ "nombre_usuario" Character varying(25) NOT NULL,
+ "contrasenia" Character varying(25) NOT NULL,
+ "tipo" Character varying(20) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-DEFAULT '000-000-00-00' NOT NULL,email VARCHAR(30) UNIQUE NOT NULL,nombre_usuario VARCHAR(25) UNIQUE NOT NULL,contrasenia 
+-- Add keys for table usuario
 
-VARCHAR(25) UNIQUE NOT NULL,tipo VARCHAR(20) 
+ALTER TABLE "usuario" ADD CONSTRAINT "Key1" PRIMARY KEY ("id_usuario")
+;
 
-NOT NULL,estatus BIT(1) NOT NULL);
+ALTER TABLE "usuario" ADD CONSTRAINT "email_usuario" UNIQUE ("email")
+;
 
-CREATE TABLE categoria(id_categoria INT PRIMARY KEY,nombre_categoria VARCHAR(25) UNIQUE NOT NULL,estatus BIT(1) NOT NULL);
+ALTER TABLE "usuario" ADD CONSTRAINT "nombre_usuario" UNIQUE ("nombre_usuario")
+;
 
-CREATE TABLE detalle_producto(id_detalle_producto INT PRIMARY KEY,numero_serie VARCHAR(25) UNIQUE NOT NULL);
+ALTER TABLE "usuario" ADD CONSTRAINT "contrasenia" UNIQUE ("contrasenia")
+;
 
-CREATE TABLE contacto_proveedor(id_contacto_proveedor INT PRIMARY KEY NOT NULL,nombre VARCHAR(25) NOT 
+-- Table venta
 
-NULL,apellido_paterno VARCHAR(25) NOT NULL,apellido_materno 
+CREATE TABLE "venta"(
+ "id_venta" Integer NOT NULL,
+ "vendedor" Integer,
+ "fecha_hora" Timestamp with time zone NOT NULL,
+ "id_cliente" Integer,
+ "iva" Numeric(6,2) NOT NULL,
+ "garantia" Text NOT NULL,
+ "terminal" Numeric NOT NULL,
+ "id_check_equipo" Integer
+)
+WITH (OIDS=FALSE)
+;
 
-VARCHAR(25) NOT NULL,calle VARCHAR(20) NULL,avenida VARCHAR(20) NULL,numero VARCHAR(10) NULL,colonia VARCHAR(25) 
+-- Create indexes for table venta
 
-NULL,codigo_postal INT NULL,ciudad VARCHAR(25) NOT 
+CREATE INDEX "IX_Relationship37" ON "venta" ("vendedor")
+;
 
-NULL,telefono VARCHAR(20) DEFAULT '000-000-00-00' NOT NULL,email VARCHAR(30) NOT NULL,estatus BIT(1) NOT NULL);
+CREATE INDEX "IX_Relationship40" ON "venta" ("id_cliente")
+;
 
-CREATE TABLE proveedor(id_proveedor INT PRIMARY KEY NOT NULL,nombre_empresa VARCHAR(25) NOT NULL,rfc VARCHAR(20) UNIQUE 
+CREATE INDEX "IX_Relationship45" ON "venta" ("id_check_equipo")
+;
 
-NOT NULL,calle VARCHAR(20) NULL,avenida 
+-- Add keys for table venta
 
-VARCHAR(20) NULL,numero VARCHAR(10) NULL,colonia VARCHAR(25) NULL,codigo_postal INT NULL,ciudad VARCHAR(25) NOT 
+ALTER TABLE "venta" ADD CONSTRAINT "Key2" PRIMARY KEY ("id_venta")
+;
 
-NULL,telefono VARCHAR(20) DEFAULT '000-000-00-00' NOT 
+-- Table producto
 
-NULL,email VARCHAR(30) UNIQUE NOT NULL,estatus BIT(1) NOT NULL,id_contacto_proveedor INT  REFERENCES contacto_proveedor 
+CREATE TABLE "producto"(
+ "id_producto" Integer NOT NULL,
+ "id_categoria" Integer,
+ "id_marca" Integer,
+ "numero_de_parte" Character varying(25) NOT NULL,
+ "existencias" Numeric NOT NULL,
+ "precio_de_compra" Numeric(6,2) NOT NULL,
+ "precio_1" Numeric(6,2) NOT NULL,
+ "precio_2" Numeric(6,2) NOT NULL,
+ "precio_3" Numeric(6,2) NOT NULL,
+ "descripcion" Text NOT NULL,
+ "stock_maximo" Integer NOT NULL,
+ "stock_minimo" Integer NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-(id_contacto_proveedor) NOT NULL);
+-- Create indexes for table producto
 
-CREATE TABLE compra(id_compra INT PRIMARY KEY,id_proveedor INT REFERENCES proveedor (id_proveedor) NOT NULL,fecha_compra 
+CREATE INDEX "IX_Relationship29" ON "producto" ("id_categoria")
+;
 
-timestamp without time zone NOT 
+CREATE INDEX "IX_Relationship47" ON "producto" ("id_marca")
+;
 
-NULL,fecha_registro timestamp without time zone NOT NULL);
+-- Add keys for table producto
 
-CREATE TABLE producto(id_producto INT PRIMARY KEY NOT NULL,id_categoria INT REFERENCES categoria (id_categoria) NOT 
+ALTER TABLE "producto" ADD CONSTRAINT "Key4" PRIMARY KEY ("id_producto")
+;
 
-NULL,numero_de_serie INT REFERENCES 
+-- Table detalle_garantia
 
-detalle_producto (id_detalle_producto) NOT NULL,numero_de_parte VARCHAR(25) NOT NULL,existencias NUMERIC NOT 
+CREATE TABLE "detalle_garantia"(
+ "id_detalle_garantia" Integer NOT NULL,
+ "id_producto" Integer,
+ "id_venta" Integer,
+ "cantidad" Integer NOT NULL,
+ "precio" Numeric(6,2) NOT NULL,
+ "estatus" Character varying(25) NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-NULL,precio_de_compra DECIMAL(18,2) NOT NULL,precio_1 
+-- Create indexes for table detalle_garantia
 
-DECIMAL(18,2) NOT NULL,precio_2 DECIMAL(18,2) NOT NULL,precio_3 DECIMAL(18,2) NOT NULL,descripcion TEXT NOT NULL,estatus 
+CREATE INDEX "IX_Relationship35" ON "detalle_garantia" ("id_producto")
+;
 
-BIT(1) NOT NULL);
+CREATE INDEX "IX_Relationship39" ON "detalle_garantia" ("id_venta")
+;
 
-CREATE TABLE servicio(id_servicio INT PRIMARY KEY NOT NULL,tipo_de_servicio VARCHAR(25) NOT NULL,precio_1 DECIMAL(18,2) 
+-- Add keys for table detalle_garantia
 
-NOT NULL,precio_2 DECIMAL(18,2) NOT 
+ALTER TABLE "detalle_garantia" ADD CONSTRAINT "Key5" PRIMARY KEY ("id_detalle_garantia")
+;
 
-NULL,precio_3 DECIMAL(18,2) NOT NULL,estatus BIT(1) NOT NULL);
+-- Table categoria
 
-CREATE TABLE cliente(id_cliente INT PRIMARY KEY NOT NULL,rfc VARCHAR(20) UNIQUE NOT NULL,nombre VARCHAR(25) NOT 
+CREATE TABLE "categoria"(
+ "id_categoria" Integer NOT NULL,
+ "nombre_categoria" Character varying(25) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-NULL,apellido_paterno VARCHAR(25) NOT 
+-- Add keys for table categoria
 
-NULL,apellido_materno VARCHAR(25) NOT NULL,calle VARCHAR(20) NULL,avenida VARCHAR(20) NULL,numero VARCHAR(10) NULL,colonia 
+ALTER TABLE "categoria" ADD CONSTRAINT "Key6" PRIMARY KEY ("id_categoria")
+;
 
-VARCHAR(25) NULL,codigo_postal INT 
+ALTER TABLE "categoria" ADD CONSTRAINT "nombre_categoria" UNIQUE ("nombre_categoria")
+;
 
-NULL,ciudad VARCHAR(25) NOT NULL,telefono VARCHAR(20) DEFAULT '000-000-00-00' NOT NULL,email VARCHAR(30) UNIQUE NOT 
+-- Table servicio
 
-NULL,estatus BIT(1) NOT NULL);
+CREATE TABLE "servicio"(
+ "id_servicio" Integer NOT NULL,
+ "tipo_de_servicio" Character varying(25) NOT NULL,
+ "precio_1" Numeric(30,2),
+ "precio_2" Numeric(30,2),
+ "precio_3" Numeric(30,2),
+ "estatus" Character(1) DEFAULT 's' NOT NULL,
+ "dias_de_garantia" Integer NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-CREATE TABLE check_equipo(id_check_equipo INT PRIMARY KEY NOT NULL,tipo_equipo VARCHAR(20) UNIQUE NOT NULL,sistema_equipo 
+-- Add keys for table servicio
 
-VARCHAR(25) NOT NULL,sistema_operativo VARCHAR(25) NOT NULL,danios_presentados TEXT NOT NULL,falla_detectada TEXT NOT 
+ALTER TABLE "servicio" ADD CONSTRAINT "Key7" PRIMARY KEY ("id_servicio")
+;
 
-NULL,diagnostico TEXT NOT NULL);
+-- Table detalle_venta
 
-CREATE TABLE venta(id_venta INT PRIMARY KEY,vendedor INT  REFERENCES usuario (id_usuario),fecha_hora timestamp without 
+CREATE TABLE "detalle_venta"(
+ "id_detalle_venta" Integer NOT NULL,
+ "id_producto" Integer,
+ "id_venta" Integer,
+ "cantidad" Integer NOT NULL,
+ "precio" Numeric(6,2) NOT NULL,
+ "id_detalle_producto" Integer,
+ "iva" Numeric(6,2) NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-time zone DEFAULT now() NOT NULL,id_cliente INT 
+-- Create indexes for table detalle_venta
 
-REFERENCES cliente (id_cliente),iva DECIMAL(18,2) NOT NULL,garantia TEXT NOT NULL,terminal NUMERIC NOT 
+CREATE INDEX "IX_Relationship24" ON "detalle_venta" ("id_venta")
+;
 
-NULL,id_check_equipo INT REFERENCES check_equipo (id_check_equipo));
+CREATE INDEX "IX_Relationship36" ON "detalle_venta" ("id_producto")
+;
 
-CREATE TABLE detalle_venta(id_detalle_venta INT PRIMARY KEY,id_producto INT REFERENCES producto (id_producto) NOT 
+CREATE INDEX "IX_Relationship48" ON "detalle_venta" ("id_detalle_producto")
+;
 
-NULL,id_venta INT REFERENCES venta (id_venta) NOT 
+-- Add keys for table detalle_venta
 
-NULL,cantidad INT NOT NULL,precio DECIMAL(18,2) NOT NULL);
+ALTER TABLE "detalle_venta" ADD CONSTRAINT "Key8" PRIMARY KEY ("id_detalle_venta")
+;
 
-CREATE TABLE detalle_garantia(id_detalle_garantia INT PRIMARY KEY,id_producto INT REFERENCES producto (id_producto) NOT 
+-- Table cliente
 
-NULL,id_venta INT REFERENCES venta (id_venta) 
+CREATE TABLE "cliente"(
+ "id_cliente" Integer NOT NULL,
+ "rfc" Character varying(20) NOT NULL,
+ "nombre" Character varying(25) NOT NULL,
+ "apellido_paterno" Character varying(25) NOT NULL,
+ "apellido_materno" Character varying(25) NOT NULL,
+ "calle" Character varying(20),
+ "avenida" Character varying(20),
+ "numero" Character varying(10),
+ "colonia" Character varying(25),
+ "codigo_postal" Numeric NOT NULL,
+ "ciudad" Character varying(25) NOT NULL,
+ "telefono" Character varying(20) NOT NULL,
+ "email" Character varying(30) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
 
-NOT NULL,cantidad INT NOT NULL,precio DECIMAL(18,2) NOT NULL);
+-- Add keys for table cliente
 
-CREATE TABLE detalle_compra(id_detalle_compra INT PRIMARY KEY,id_compra INT REFERENCES compra (id_compra) NOT 
+ALTER TABLE "cliente" ADD CONSTRAINT "Key9" PRIMARY KEY ("id_cliente")
+;
 
-NULL,id_producto INT REFERENCES producto (id_producto) 
+ALTER TABLE "cliente" ADD CONSTRAINT "rfc_cliente" UNIQUE ("rfc")
+;
 
-NOT NULL,cantidad INT NOT NULL,precio DECIMAL(18,2) NOT NULL);
+ALTER TABLE "cliente" ADD CONSTRAINT "email_cliente" UNIQUE ("email")
+;
 
-CREATE TABLE detalle_servicio(id_detalle_servicio INT PRIMARY KEY,id_venta INT REFERENCES venta (id_venta) NOT 
+-- Table detalle_compra
 
-NULL,id_servicio INT REFERENCES servicio (id_servicio) 
+CREATE TABLE "detalle_compra"(
+ "id_detalle_compra" Integer NOT NULL,
+ "id_compra" Integer,
+ "id_producto" Integer,
+ "cantidad" Integer NOT NULL,
+ "precio" Numeric(6,2) NOT NULL,
+ "precio_compra_1" Numeric(6,6) NOT NULL,
+ "precio_compra_2" Numeric(6,2) NOT NULL,
+ "precio_compra_3" Numeric(6,2) NOT NULL,
+ "id_detalle_producto" Integer
+)
+WITH (OIDS=FALSE)
+;
 
-NOT NULL,cantidad INT NOT NULL,precio DECIMAL(18,2) NOT NULL);
+-- Create indexes for table detalle_compra
+
+CREATE INDEX "IX_Relationship32" ON "detalle_compra" ("id_compra")
+;
+
+CREATE INDEX "IX_Relationship33" ON "detalle_compra" ("id_producto")
+;
+
+CREATE INDEX "IX_Relationship54" ON "detalle_compra" ("id_detalle_producto")
+;
+
+-- Add keys for table detalle_compra
+
+ALTER TABLE "detalle_compra" ADD CONSTRAINT "Key10" PRIMARY KEY ("id_detalle_compra")
+;
+
+-- Table compra
+
+CREATE TABLE "compra"(
+ "id_compra" Integer NOT NULL,
+ "fecha_hora_compra" Timestamp with time zone NOT NULL,
+ "fecha_hora_registro" Timestamp with time zone NOT NULL,
+ "id_proveedor" Integer,
+ "id_usuario" Integer
+)
+WITH (OIDS=FALSE)
+;
+
+-- Create indexes for table compra
+
+CREATE INDEX "IX_Relationship31" ON "compra" ("id_proveedor")
+;
+
+CREATE INDEX "IX_Relationship55" ON "compra" ("id_usuario")
+;
+
+-- Add keys for table compra
+
+ALTER TABLE "compra" ADD CONSTRAINT "Key11" PRIMARY KEY ("id_compra")
+;
+
+-- Table proveedor
+
+CREATE TABLE "proveedor"(
+ "id_proveedor" Integer NOT NULL,
+ "nombre_empresa" Character varying(25) NOT NULL,
+ "rfc" Character varying(20) NOT NULL,
+ "calle" Character varying(20),
+ "avenida" Character varying(20),
+ "numero" Character varying(10),
+ "colonia" Character varying(25),
+ "codigo_postal" Numeric,
+ "ciudad" Character varying(25) NOT NULL,
+ "telefono" Character varying(20),
+ "email" Character varying(30) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
+
+-- Add keys for table proveedor
+
+ALTER TABLE "proveedor" ADD CONSTRAINT "Key12" PRIMARY KEY ("id_proveedor")
+;
+
+ALTER TABLE "proveedor" ADD CONSTRAINT "email_proveedor" UNIQUE ("email")
+;
+
+ALTER TABLE "proveedor" ADD CONSTRAINT "rfc_proveedor" UNIQUE ("rfc")
+;
+
+-- Table contacto_proveedor
+
+CREATE TABLE "contacto_proveedor"(
+ "id_contacto_proveedor" Integer NOT NULL,
+ "nombre" Character varying(25) NOT NULL,
+ "apellido_paterno" Character varying(25) NOT NULL,
+ "apellido_materno" Character varying(25) NOT NULL,
+ "telefono" Character varying(20) NOT NULL,
+ "email" Character varying(30) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL,
+ "id_proveedor" Integer NOT NULL
+)
+WITH (OIDS=FALSE)
+;
+
+-- Create indexes for table contacto_proveedor
+
+CREATE INDEX "IX_Relationship63" ON "contacto_proveedor" ("id_proveedor")
+;
+
+-- Add keys for table contacto_proveedor
+
+ALTER TABLE "contacto_proveedor" ADD CONSTRAINT "Key13" PRIMARY KEY ("id_contacto_proveedor")
+;
+
+-- Table detalle_servicio
+
+CREATE TABLE "detalle_servicio"(
+ "id_detalle_servicio" Integer NOT NULL,
+ "id_venta" Integer,
+ "id_servicio" Integer,
+ "cantidad" Integer NOT NULL,
+ "precio" Numeric(6,2) NOT NULL
+)
+WITH (OIDS=FALSE)
+;
+
+-- Create indexes for table detalle_servicio
+
+CREATE INDEX "IX_Relationship41" ON "detalle_servicio" ("id_venta")
+;
+
+CREATE INDEX "IX_Relationship42" ON "detalle_servicio" ("id_servicio")
+;
+
+-- Add keys for table detalle_servicio
+
+ALTER TABLE "detalle_servicio" ADD CONSTRAINT "Key14" PRIMARY KEY ("id_detalle_servicio")
+;
+
+-- Table check_equipo
+
+CREATE TABLE "check_equipo"(
+ "id_check_equipo" Integer NOT NULL,
+ "tipo_equipo" Character varying(20) NOT NULL,
+ "sistema_equipo" Character varying(20) NOT NULL,
+ "sistema_operativo" Character varying(20) NOT NULL,
+ "danios_presentados" Text NOT NULL,
+ "falla_detectada" Text NOT NULL,
+ "diagnostico" Text NOT NULL
+)
+WITH (OIDS=FALSE)
+;
+
+-- Add keys for table check_equipo
+
+ALTER TABLE "check_equipo" ADD CONSTRAINT "Key15" PRIMARY KEY ("id_check_equipo")
+;
+
+-- Table detalle_producto
+
+CREATE TABLE "detalle_producto"(
+ "id_detalle_producto" Integer NOT NULL,
+ "numero_serie" Character varying(25) NOT NULL,
+ "vendido" Character(1) NOT NULL,
+ "id_producto" Integer
+)
+WITH (OIDS=FALSE)
+;
+
+-- Create indexes for table detalle_producto
+
+CREATE INDEX "IX_Relationship46" ON "detalle_producto" ("id_producto")
+;
+
+-- Add keys for table detalle_producto
+
+ALTER TABLE "detalle_producto" ADD CONSTRAINT "Key16" PRIMARY KEY ("id_detalle_producto")
+;
+
+ALTER TABLE "detalle_producto" ADD CONSTRAINT "numero_serie" UNIQUE ("numero_serie")
+;
+
+-- Table marcas
+
+CREATE TABLE "marcas"(
+ "id_marca" Integer NOT NULL,
+ "nombre_marca" Character varying(20) NOT NULL,
+ "estatus" Character(1) DEFAULT 's' NOT NULL
+)
+WITH (OIDS=FALSE)
+;
+
+-- Add keys for table marcas
+
+ALTER TABLE "marcas" ADD CONSTRAINT "Key17" PRIMARY KEY ("id_marca")
+;
+
+-- Create relationships section ------------------------------------------------- 
+
+ALTER TABLE "detalle_venta" ADD CONSTRAINT "Relationship24" FOREIGN KEY ("id_venta") REFERENCES "venta" ("id_venta") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "producto" ADD CONSTRAINT "Relationship29" FOREIGN KEY ("id_categoria") REFERENCES "categoria" ("id_categoria") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "compra" ADD CONSTRAINT "Relationship31" FOREIGN KEY ("id_proveedor") REFERENCES "proveedor" ("id_proveedor") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_compra" ADD CONSTRAINT "Relationship32" FOREIGN KEY ("id_compra") REFERENCES "compra" ("id_compra") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_compra" ADD CONSTRAINT "Relationship33" FOREIGN KEY ("id_producto") REFERENCES "producto" ("id_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_garantia" ADD CONSTRAINT "Relationship35" FOREIGN KEY ("id_producto") REFERENCES "producto" ("id_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_venta" ADD CONSTRAINT "Relationship36" FOREIGN KEY ("id_producto") REFERENCES "producto" ("id_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "venta" ADD CONSTRAINT "Relationship37" FOREIGN KEY ("vendedor") REFERENCES "usuario" ("id_usuario") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_garantia" ADD CONSTRAINT "Relationship39" FOREIGN KEY ("id_venta") REFERENCES "venta" ("id_venta") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "venta" ADD CONSTRAINT "Relationship40" FOREIGN KEY ("id_cliente") REFERENCES "cliente" ("id_cliente") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_servicio" ADD CONSTRAINT "Relationship41" FOREIGN KEY ("id_venta") REFERENCES "venta" ("id_venta") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_servicio" ADD CONSTRAINT "Relationship42" FOREIGN KEY ("id_servicio") REFERENCES "servicio" ("id_servicio") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "venta" ADD CONSTRAINT "Relationship45" FOREIGN KEY ("id_check_equipo") REFERENCES "check_equipo" ("id_check_equipo") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_producto" ADD CONSTRAINT "Relationship46" FOREIGN KEY ("id_producto") REFERENCES "producto" ("id_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "producto" ADD CONSTRAINT "Relationship47" FOREIGN KEY ("id_marca") REFERENCES "marcas" ("id_marca") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_venta" ADD CONSTRAINT "Relationship48" FOREIGN KEY ("id_detalle_producto") REFERENCES "detalle_producto" ("id_detalle_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "detalle_compra" ADD CONSTRAINT "Relationship54" FOREIGN KEY ("id_detalle_producto") REFERENCES "detalle_producto" ("id_detalle_producto") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "compra" ADD CONSTRAINT "Relationship55" FOREIGN KEY ("id_usuario") REFERENCES "usuario" ("id_usuario") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+ALTER TABLE "contacto_proveedor" ADD CONSTRAINT "Relationship63" FOREIGN KEY ("id_proveedor") REFERENCES "proveedor" ("id_proveedor") ON DELETE NO ACTION ON UPDATE NO ACTION
+;
+
+
+
+
 
