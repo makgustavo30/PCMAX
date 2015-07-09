@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 public class ControladorMenu implements Initializable {
 	private ControladorVentanas ventanas;
 	public static String nivel;
-	@FXML Button btnVentas, btnServicios, btnClientes, btnProveedores, btnProducto, btnUsuarios;
+	@FXML Button btnVentas, btnServicios, btnClientes, btnProveedores, btnProducto, btnUsuarios, btnCheck;
 	
 	@FXML
 	public void abrirServicios(){
@@ -19,7 +19,7 @@ public class ControladorMenu implements Initializable {
 	
 	@FXML
 	public void abrirClientes(){
-		ventanas.asignarCentro2("../vista/fxml/Clientes.fxml");
+		ventanas.asignarCentro("../vista/fxml/Clientes.fxml");
 	}
 	
 	@FXML
@@ -37,13 +37,22 @@ public class ControladorMenu implements Initializable {
 		ventanas.asignarCentro3("../vista/fxml/Proveedores.fxml");
 	}
 	
+	@FXML
+	public void abrirUsuarios(){
+		ventanas.asignarCentro("../vista/fxml/Usuarios.fxml");
+	}
+	
+	@FXML
+	public void abrirChecks(){
+		ventanas.asignarCentro("../vista/fxml/DiagnosticoEquipo.fxml");
+	}
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
 		ventanas = ControladorVentanas.getInstancia();
 		if(ControladorMenu.nivel.equals("usuario")){
 			btnProveedores.setDisable(true);
-			btnUsuarios.setDisable(true);
 			
 		}
 	}

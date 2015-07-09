@@ -21,7 +21,7 @@ public class Conexion {
 	private Conexion(){
 		bd = "pcmax2.1";
 		usuario = "postgres";
-		contrasenia = "maki3001";
+		contrasenia = "alex88mtz";
 		puerto = "5432";
 		direccionip = "127.0.0.1";
 		servidor = "jdbc:postgresql://";
