@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 public class ControladorMenu implements Initializable {
 	private ControladorVentanas ventanas;
 	public static String nivel;
-	@FXML Button btnVentas, btnServicios, btnClientes, btnProveedores, btnProducto, btnCategoria;
+	@FXML Button btnVentas, btnServicios, btnClientes, btnProveedores, btnProducto, btnUsuarios;
 	
 	@FXML
 	public void abrirServicios(){
@@ -43,7 +43,7 @@ public class ControladorMenu implements Initializable {
 		ventanas = ControladorVentanas.getInstancia();
 		if(ControladorMenu.nivel.equals("usuario")){
 			btnProveedores.setDisable(true);
-			btnCategoria.setDisable(true);
+			btnUsuarios.setDisable(true);
 			
 		}
 	}
