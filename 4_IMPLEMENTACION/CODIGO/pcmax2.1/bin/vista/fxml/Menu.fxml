@@ -14,7 +14,7 @@
    <top>
       <ToolBar prefHeight="66.0" prefWidth="1129.0">
         <items>
-          <Button fx:id="btnVentas" styleClass="dark-blue"  mnemonicParsing="false" onAction="#abrirVentas" prefHeight="42.0" prefWidth="130.0" text="Ventas">
+          <Button fx:id="btnVentas" mnemonicParsing="false" onAction="#abrirVentas" prefHeight="42.0" prefWidth="130.0" styleClass="dark-blue" text="Ventas">
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -97,6 +97,18 @@
                   </ImageView>
                </graphic>
             </Button>
+            <MenuButton mnemonicParsing="false" prefHeight="43.0" prefWidth="131.0" text="Menu Admin">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+               <items>
+                  <MenuItem fx:id="AbrirEnviarMail" mnemonicParsing="false" onAction="#AbrirEnviarMail" text="Abrir Mail" />
+                  <MenuItem fx:id="backup" mnemonicParsing="false" onAction="#abrirBackup" text="Backup BD" />
+                  <MenuItem fx:id="Abrirexcel" mnemonicParsing="false" onAction="#Abrirexcel" text="Exportar Excel" />
+                  <MenuItem fx:id="AbrirLog" mnemonicParsing="false" onAction="#Abrirlogger" text="Logger de errores" />
+                  <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#onExit" text="Salir" />
+               </items>
+            </MenuButton>
         </items>
       </ToolBar>
    </top>

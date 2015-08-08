@@ -1,20 +1,24 @@
 package controlador;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 
 
+
+
+
+
 import modelo.Backup;
+import modelo.ExportExcelBaseClientes;
 import vista.Principal;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-
 import javafx.stage.Stage;
 
 
@@ -23,6 +27,7 @@ public class ControladorMenu implements Initializable {
 	private ControladorVentanas ventanas;
 	public static Stage primaryStage;
 	public static String nivel;
+	private ControladorErrores ce;
 	@FXML Button btnVentas, btnServicios, btnClientes, btnProveedores, btnProducto, btnUsuarios, btnCheck ;
 	
 	// menubar
@@ -36,6 +41,12 @@ public class ControladorMenu implements Initializable {
 		private MenuItem salir;
 		@FXML
 		private MenuItem autor;
+		@FXML
+		private MenuItem AbrirLog;
+		@FXML
+		private MenuItem Abrirexcel;
+		@FXML
+		private MenuItem AbrirEnviarMail;
 	
 		
 	
@@ -91,6 +102,11 @@ public class ControladorMenu implements Initializable {
 		Principal.class.getResource("fxml/Conexion.fxml");
 	}
 	
+	@FXML 
+	public void AbrirEnviarMail(){
+		Principal.class.getResource("vista/Mail.java");
+	}
+	
 	@FXML
 	public void abrirBackup(){
 		Backup b=new Backup();
@@ -98,7 +114,35 @@ public class ControladorMenu implements Initializable {
 		b.setBounds(0, 0, 500, 500);
 		b.setLocationRelativeTo(null);		
 	}
-	
+	@FXML
+ 	public void Abrirexcel() {
+        new ExportExcelBaseClientes().WriteExcel();
+        String File = new String("src/archivos/Clientes.xls"); 
+		   
+		 try{ 
+		   //definiendo la ruta en la propiedad file
+		   Runtime.getRuntime().exec("cmd /c start "+File);
+		     
+		   }catch(IOException ex){
+			  ce.printlog(ex.getMessage(), this.getClass().toString());
+		   } 
+	}
+	@FXML                                             
+	public void Abrirlogger() {
+		  //ruta del archivo en el pc
+	     String File = new String("src/archivos/log.txt"); 
+		   
+		 try{ 
+		   //definiendo la ruta en la propiedad file
+		   Runtime.getRuntime().exec("cmd /c start "+File);
+		     
+		 }catch(IOException ex){
+			  ce.printlog(ex.getMessage(), this.getClass().toString());}
+		   } 
+	@FXML
+	public void onExit() {
+		System.exit(0);
+	}
 	
 
 	@Override

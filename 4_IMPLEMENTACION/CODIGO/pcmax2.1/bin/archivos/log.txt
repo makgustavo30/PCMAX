@@ -1338,3 +1338,32 @@ class controlador.ControladorVentanas
 /C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Menu.fxml:17
  2015/08/07 11:46:10
 *************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirexcel', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:106
+ 2015/08/08 12:59:59
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirexcel', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:106
+ 2015/08/08 13:00:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirlogger', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:107
+ 2015/08/08 13:04:37
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#onExit', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:108
+ 2015/08/08 13:06:44
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/08 14:47:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.2/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/08 14:47:15
+*************************************************
