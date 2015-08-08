@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorCategoria">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" text="Nuevo">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/nuevo.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardar" text="Guardar">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/guardar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" text="Eliminar">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <Pane prefHeight="322.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="330.0" stroke="BLACK" strokeType="INSIDE" width="360.0">
+               <fill>
+                  <RadialGradient centerY="1.0" focusDistance="-0.2093023255813954" radius="1.0">
+                     <stops>
+                        <Stop color="#ffffffb2" />
+                        <Stop color="#ffffffb2" offset="0.007662835249042145" />
+                        <Stop color="#d3d3d3" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="16.0" layoutY="17.0" text="Nombre:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtNombre2" layoutX="94.0" layoutY="13.0" />
+            <ListView fx:id="lvCategoria" layoutX="125.0" layoutY="62.0" onMouseClicked="#click_ListView" prefHeight="238.0" prefWidth="218.0" />
+            <Label fx:id="lblID" layoutX="92.0" layoutY="64.0" prefHeight="17.0" prefWidth="15.0">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Label>
+            <ImageView fitHeight="108.0" fitWidth="94.0" layoutX="27.0" layoutY="206.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/robot30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="108.0" layoutX="24.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="31.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblMensaje3" layoutX="50.0" layoutY="9.0" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

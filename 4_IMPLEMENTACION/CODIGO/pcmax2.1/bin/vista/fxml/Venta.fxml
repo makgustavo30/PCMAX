@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVentas">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" stroke="BLACK" strokeType="INSIDE" width="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <RadialGradient centerX="0.07777777777777775" centerY="0.8571428571428572" focusDistance="1.0" radius="1.0">
+               <stops>
+                  <Stop color="#aeaeae" />
+                  <Stop color="#d3d0d0" offset="0.3333333333333326" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="145.0" fitWidth="111.0" layoutX="1007.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/robot49.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="-3.0" text="Ventas" AnchorPane.topAnchor="-3.0">
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.022222222222222223" centerY="0.5619047619047619" focusAngle="160.35" focusDistance="-0.18604651162790709" radius="0.7093023255813953">
+               <stops>
+                  <Stop color="#ae3333" />
+                  <Stop color="#ee4040" offset="0.29553264604810997" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ToolBar layoutX="3.0" layoutY="57.0" prefHeight="66.0" prefWidth="977.0" AnchorPane.topAnchor="57.0">
+        <items>
+          <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" prefHeight="69.0" prefWidth="124.0" text="Guardar" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/guardar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="69.0" prefWidth="124.0" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/editar%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="69.0" prefWidth="124.0" text="Eliminar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="53.0" fitWidth="321.0" pickOnBounds="true" translateX="150.0">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+        </items>
+      </ToolBar>
+      <TextField fx:id="txtBuscador" layoutX="809.0" layoutY="17.0" onKeyReleased="#buscador" promptText="Buscar venta..." AnchorPane.leftAnchor="809.0" AnchorPane.topAnchor="17.0" />
+      <Label fx:id="lblMensaje2" layoutX="73.0" layoutY="539.0" prefHeight="17.0" prefWidth="310.0" />
+      <ImageView fitHeight="43.0" fitWidth="94.0" layoutX="760.0" layoutY="8.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@../imagenes/buscar%20(2).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMensaje" layoutX="326.0" layoutY="20.0" prefHeight="25.0" prefWidth="394.0" textFill="#d80f0f">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvProductos" layoutX="8.0" layoutY="142.0" onMouseClicked="#seleccionar" prefHeight="416.0" prefWidth="262.0" />
+      <TitledPane animated="false" layoutX="290.0" layoutY="142.0" prefHeight="94.0" prefWidth="687.0" text="Datos de la Venta">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="72.0" prefWidth="685.0">
+               <children>
+                  <TextField layoutX="52.0" layoutY="22.0" prefHeight="25.0" prefWidth="74.0" />
+                  <TextField layoutX="228.0" layoutY="22.0" />
+                  <TextField layoutX="470.0" layoutY="22.0" prefHeight="25.0" prefWidth="199.0" />
+                  <Label layoutX="14.0" layoutY="26.0" text="Folio:" />
+                  <Label layoutX="161.0" layoutY="26.0" text="Vendedor:" />
+                  <Label layoutX="416.0" layoutY="26.0" text="Cliente:" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="290.0" layoutY="238.0" prefHeight="320.0" prefWidth="687.0" text="Detalle de la Venta">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtProducto" layoutX="82.0" layoutY="6.0" prefHeight="25.0" prefWidth="236.0" />
+                  <TextField fx:id="txtCantidad" layoutX="83.0" layoutY="42.0" prefHeight="25.0" prefWidth="50.0" text="1" />
+                  <TextField fx:id="txtExistencia" layoutX="237.0" layoutY="42.0" prefHeight="25.0" prefWidth="81.0" />
+                  <TextField fx:id="txtPrecio" layoutX="394.0" layoutY="6.0" prefHeight="25.0" prefWidth="107.0" />
+                  <TextField fx:id="txtTotal" layoutX="420.0" layoutY="237.0" prefHeight="34.0" prefWidth="185.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="21.0" layoutY="10.0" text="Producto:" />
+                  <Label layoutX="21.0" layoutY="46.0" text="Cantidad:" />
+                  <Label layoutX="164.0" layoutY="46.0" text="Existencias: " />
+                  <Label layoutX="348.0" layoutY="10.0" text="Precio:" />
+                  <Label layoutX="308.0" layoutY="241.0" text="Total:">
+                     <font>
+                        <Font name="Arial Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tvDetalle" layoutX="15.0" layoutY="71.0" prefHeight="162.0" prefWidth="655.0">
+                    <columns>
+                      <TableColumn fx:id="tcProducto" prefWidth="226.0" text="Producto" />
+                      <TableColumn fx:id="tcPrecio" prefWidth="104.0" text="Precio" />
+                        <TableColumn fx:id="tcCantidad" prefWidth="67.0" text="Cantidad" />
+                        <TableColumn fx:id="tcSubtotal" prefWidth="199.0" text="Subtotal" />
+                        <TableColumn fx:id="tcEliminar" prefWidth="58.0" text="Eliminar" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="561.0" layoutY="30.0" mnemonicParsing="false" onAction="#agregarProducto" text="Button" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
