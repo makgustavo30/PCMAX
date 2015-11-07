@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorReportes">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" stroke="BLACK" strokeType="INSIDE" width="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.7523809523809524" endY="0.05714285714285705" startX="0.33333333333333337" startY="0.8523809523809524">
+               <stops>
+                  <Stop color="#4cc8ed82" />
+                  <Stop color="#8e9c284d" offset="0.8659003831417624" />
+                  <Stop color="#fffffff5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="156.0" fitWidth="133.0" layoutX="997.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/robot49.png" />
+         </image>
+      </ImageView>
+      <ToolBar layoutX="3.0" layoutY="57.0" prefHeight="66.0" prefWidth="977.0" AnchorPane.topAnchor="57.0">
+        <items>
+          <Button fx:id="btnReporFecha" contentDisplay="TOP" mnemonicParsing="false" onAction="#ReporFecha" prefHeight="69.0" prefWidth="146.0" text="Reportes Fechas" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/calendar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnCorteCaja" contentDisplay="TOP" mnemonicParsing="false" onAction="#CorteCaja" prefHeight="69.0" prefWidth="124.0" text="Corte de Caja">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/calculator.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="53.0" fitWidth="321.0" pickOnBounds="true" translateX="150.0">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+        </items>
+      </ToolBar>
+      <Label layoutX="4.0" layoutY="-3.0" text="Reportes">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerY="0.5" radius="0.8837209302325582">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#403e3e" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblMensaje" layoutX="14.0" layoutY="528.0" prefHeight="17.0" prefWidth="238.0" />
+      <Label layoutX="400.0" layoutY="420.0" text="Reportes de proveedores">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="411.0" layoutY="185.0" text="Reportes de servicios">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="407.0" layoutY="301.0" text="Reportes de productos">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="420.0" text="Reportes de usuarios">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="301.0" text="Reportes de clientes">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="185.0" text="Reportes de ventas">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="btnBuscar" layoutX="821.0" layoutY="173.0" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/folder.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnReporVenta" layoutX="223.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/shoppingcart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnReporUsuario" layoutX="223.0" layoutY="392.0" mnemonicParsing="false" onAction="#ReporUsuario" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/user_admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnReporCliente" layoutX="223.0" layoutY="273.0" mnemonicParsing="false" onAction="#ReporCliente" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnReporProductos" layoutX="590.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/computer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnReporServicio" layoutX="590.0" layoutY="157.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/clock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnReporProveedores" layoutX="590.0" layoutY="392.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../imagenes/user_manage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

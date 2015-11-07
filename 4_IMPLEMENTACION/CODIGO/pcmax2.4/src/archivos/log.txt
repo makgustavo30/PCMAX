@@ -1,0 +1,1635 @@
+class model.Conexion
+FATAL: la autentificaci?n password fall? para el usuario ?postgres?2015/07/11 11:36:38
+*************************************************class model.Conexion
+null2015/07/11 11:36:38
+*************************************************class model.Conexion
+FATAL: la autentificaci?n password fall? para el usuario ?postgres?2015/07/11 11:38:35
+*************************************************class model.Conexion
+null2015/07/11 11:38:35
+*************************************************class model.Conexion
+FATAL: la autentificaci?n password fall? para el usuario ?postgres?2015/07/11 11:38:35
+*************************************************class model.Conexion
+null2015/07/11 11:38:35
+*************************************************class model.Conexion
+FATAL: no existe la base de datos ?DVDRENTA1?2015/07/11 11:39:27
+*************************************************class model.Conexion
+null2015/07/11 11:39:27
+*************************************************class modelo.Cliente
+ERROR: llave duplicada viola restricción de unicidad «email_cliente»
+  Detail: Ya existe la llave (email)=(alemartinez@gmail.com).
+  Where: sentencia SQL: «insert into cliente (id_cliente,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)
+values (maximo,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)»
+función PL/pgSQL fn_agregarcliente(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying) en la línea 8 en sentencia SQL2015/07/11 12:14:23
+*************************************************class modelo.Producto
+ERROR: llave duplicada viola restricción de unicidad «Key4»
+  Detail: Ya existe la llave (id_producto)=(7).
+  Where: sentencia SQL: «insert into producto(id_producto, id_categoria, id_marca, numero_de_parte, precio_1, precio_2, precio_3, descripcion,
+stock_maximo, stock_minimo)
+values (_codigo, clavecategoria, clavemarca, _numerodeparte, _precio1, _precio2, _precio3, _descripcion, _stockmaximo, _stockminimo)»
+función PL/pgSQL fn_agregarproducto(integer,integer,integer,character varying,real,real,real,character varying,integer,integer) en la línea 3 en sentencia SQL2015/07/11 15:48:52
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Clientes2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Clientes2.fxml
+
+*************************************************class controlador.ControladorVentanas
+2015/07/12 00:04:40
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Clientes2.fxml
+
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:39:01
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:39:01
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:39:01
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:39:57
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:39:57
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirLog', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:50:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:52:43
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:133
+2015/07/12 11:52:43
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 11:59:31
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 12:07:29
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 12:07:29
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 12:33:42
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 12:36:32
+*************************************************class controlador.ControladorVentanas
+Error resolving onAction='#abrirarchivo', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Usuarios2.fxml:255
+2015/07/12 12:36:32
+*************************************************class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(alex88mtz).
+  Where: sentencia SQL: «insert into usuario (id_usuario,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)
+values (maximo,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)»
+función PL/pgSQL fn_agregarusuario(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/07/15 14:00:54
+*************************************************
+class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(michel).
+  Where: sentencia SQL: «insert into usuario (id_usuario,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)
+values (maximo,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)»
+función PL/pgSQL fn_agregarusuario(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/07/15 14:05:43
+*************************************************
+class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(vendedor).
+  Where: sentencia SQL: «insert into usuario (id_usuario,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)
+values (maximo,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)»
+función PL/pgSQL fn_agregarusuario(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/07/16 12:50:07
+*************************************************
+class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(vendedor).
+  Where: sentencia SQL: «Update usuario set id_usuario = _idusuario,nombre_usuario = _nombre_usuario,contrasenia=_contrasenia,nombre = _nombre, apellido_paterno = _apellido_paterno,apellido_materno = _apellido_materno,
+calle = _calle,avenida = _avenida,numero = _numero,colonia = _colonia,codigo_postal = _codigo_postal,ciudad = _ciudad,telefono = _telefono,
+email = _email,tipo =_tipo where id_usuario = _idusuario»
+función PL/pgSQL fn_modificarusuario(integer,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 5 en sentencia SQL 2015/07/16 12:50:24
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 14:19:23
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 14:20:50
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 14:21:48
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 14:47:03
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 15:07:33
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 15:09:09
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:102
+ 2015/07/16 15:32:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.BorderPane cannot be cast to javafx.scene.layout.AnchorPane 2015/07/16 15:46:45
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.BorderPane cannot be cast to javafx.scene.layout.AnchorPane 2015/07/16 18:34:10
+*************************************************
+class controlador.ControladorVentanas
+Invalid root element.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml
+ 2015/07/19 11:40:03
+*************************************************
+class controlador.ControladorVentanas
+Invalid root element.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml
+ 2015/07/19 11:44:48
+*************************************************
+class controlador.ControladorVentanas
+Invalid root element.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml
+ 2015/07/19 11:44:48
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml
+ 2015/07/19 12:26:56
+*************************************************
+class controlador.ControladorVentanas
+Element does not define a default property.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:128
+ 2015/07/19 12:28:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onScroll='#myScrollPane', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:134
+ 2015/07/19 12:32:58
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#about', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/Pcmax2.1/bin/vista/fxml/Menu.fxml:146
+ 2015/07/21 13:06:48
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:36:36
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:35:16
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:42:50
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:42:00
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:42:53
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:42:00
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:42:57
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:42:00
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:43:01
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:42:00
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/07/25 12:53:24
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/07/25 12:52:27
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onMouseClicked='#seleccionar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:111
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:45:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:01
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:03
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:03
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:03
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:04
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:04
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:04
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:04
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:05
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:07
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/03 23:46:10
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/03 23:45:38
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onMouseClicked='#seleccionar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:111
+ 2015/08/03 23:45:38
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:22:58
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:30:35
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:15
+ 2015/08/04 09:34:26
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:36:34
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 09:47:22
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/04 10:04:49
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:04:33
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/04 10:12:01
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/04 10:11:55
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:41:36
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:41:36
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:41:36
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:41:36
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:11
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/06 23:45:08
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/06 23:44:50
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/06 23:45:09
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/06 23:44:50
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/06 23:45:10
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:44:50
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#click_insertar', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:69
+ 2015/08/06 23:45:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:51:52
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:54:19
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:54:19
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/06 23:54:19
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:39:58
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:39:58
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onKeyReleased='#buscarTexto', either the event handler is not in the Namespace or there is an error in the script.
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Venta.fxml:99
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:43
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:44
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:44
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:45
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:45
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:45
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:46
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:47
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 00:43:51
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 00:43:31
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 01:21:25
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 01:20:39
+*************************************************
+class modelo.CheckEquipo
+ERROR: no existe la relación «vwcheck»
+  Position: 15 2015/08/07 11:39:31
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/DiagnosticoEquipo.fxml
+ 2015/08/07 11:39:22
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Menu.fxml:17
+ 2015/08/07 11:46:10
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Menu.fxml:17
+ 2015/08/07 11:46:10
+*************************************************
+class controlador.ControladorVentanas
+
+/C:/Users/Orbezo/workspace/pcmax2.1/bin/vista/fxml/Menu.fxml:17
+ 2015/08/07 11:46:10
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirexcel', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:106
+ 2015/08/08 12:59:59
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirexcel', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:106
+ 2015/08/08 13:00:31
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#Abrirlogger', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:107
+ 2015/08/08 13:04:37
+*************************************************
+class controlador.ControladorVentanas
+Error resolving onAction='#onExit', either the event handler is not in the Namespace or there is an error in the script.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml:108
+ 2015/08/08 13:06:44
+*************************************************
+class controlador.ControladorVentanas
+Root hasn't been set. Use method setRoot() before load.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Vender.fxml:13
+ 2015/08/08 15:34:36
+*************************************************
+class controlador.ControladorVentanas
+Root hasn't been set. Use method setRoot() before load.
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Vender.fxml:13
+ 2015/08/08 15:36:05
+*************************************************
+class modelo.Cliente
+ERROR: el nuevo registro para la relación «cliente» viola la restricción «check» «ck_cliente_mas_5_caracteres_colonia»
+  Detail: La fila que falla contiene (13, 988989qweqwe, Peri, pero, para, 10, 30, 1005, Peri, 94516, córdoba, 2711358978, peri@gmail.com, s).
+  Where: sentencia SQL: «insert into cliente (id_cliente,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)
+values (maximo,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)»
+función PL/pgSQL fn_agregarcliente(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/08/10 13:14:57
+*************************************************
+class modelo.Cliente
+ERROR: el nuevo registro para la relación «cliente» viola la restricción «check» «ck_cliente_mas_5_caracteres_colonia»
+  Detail: La fila que falla contiene (13, 4894984wqrefaf, Peri, pero, para, 10, 30, 1005, Peri, 94516, córdoba, 2711358978, peri@gmail.com, s).
+  Where: sentencia SQL: «insert into cliente (id_cliente,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)
+values (maximo,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)»
+función PL/pgSQL fn_agregarcliente(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/08/10 13:16:12
+*************************************************
+class modelo.Cliente
+ERROR: el nuevo registro para la relación «cliente» viola la restricción «check» «ck_cliente_mas_5_caracteres_colonia»
+  Detail: La fila que falla contiene (13, 4894984wqrefaf, Peri, pero, para, 10, 30, 1005, Peri, 94516, córdoba, 2711358978, peri@gmail.com, s).
+  Where: sentencia SQL: «insert into cliente (id_cliente,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)
+values (maximo,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)»
+función PL/pgSQL fn_agregarcliente(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/08/10 13:17:15
+*************************************************
+class modelo.Cliente
+ERROR: el nuevo registro para la relación «cliente» viola la restricción «check» «ck_cliente_mas_5_caracteres_colonia»
+  Detail: La fila que falla contiene (13, laokijao123, peri, pero, general, s/c, america, s/n, peri, 96348, cuichapa, 2718963278, peri@hotmail.com, s).
+  Where: sentencia SQL: «insert into cliente (id_cliente,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)
+values (maximo,rfc,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email)»
+función PL/pgSQL fn_agregarcliente(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/08/10 13:21:36
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Usuarios.fxml
+ 2015/08/10 13:55:00
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Usuarios.fxml
+ 2015/08/10 13:55:00
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Usuarios.fxml
+ 2015/08/10 14:01:24
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml
+ 2015/08/10 23:41:44
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml
+ 2015/08/10 23:42:41
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml
+ 2015/08/10 23:44:22
+*************************************************
+class controlador.ControladorVentanas
+
+/D:/ProyectosEclipseJava/pcmax2.1.2/bin/vista/fxml/Menu.fxml
+ 2015/08/10 23:52:15
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:38:11
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:41:22
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:42:05
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:42:27
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:44:36
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:45:54
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:46:55
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:48:41
+*************************************************
+class modelo.ExportExcelBaseProductos
+ERROR: no existe la columna «id_producto»
+  Position: 8 2015/08/13 13:52:24
+*************************************************
+class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(vendedor).
+  Where: sentencia SQL: «Update usuario set id_usuario = _idusuario,nombre_usuario = _nombre_usuario,contrasenia=_contrasenia,nombre = _nombre, apellido_paterno = _apellido_paterno,apellido_materno = _apellido_materno,
+calle = _calle,avenida = _avenida,numero = _numero,colonia = _colonia,codigo_postal = _codigo_postal,ciudad = _ciudad,telefono = _telefono,
+email = _email,tipo =_tipo where id_usuario = _idusuario»
+función PL/pgSQL fn_modificarusuario(integer,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 5 en sentencia SQL 2015/08/14 14:41:50
+*************************************************
+class modelo.Usuario1
+ERROR: llave duplicada viola restricción de unicidad «contrasenia»
+  Detail: Ya existe la llave (contrasenia)=(vendedor).
+  Where: sentencia SQL: «insert into usuario (id_usuario,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)
+values (maximo,nombre_usuario,contrasenia,nombre,apellido_paterno,apellido_materno,calle,avenida,numero,colonia,codigo_postal,ciudad,telefono,email,tipo)»
+función PL/pgSQL fn_agregarusuario(character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,character varying,integer,character varying,character varying,character varying,character varying) en la línea 8 en sentencia SQL 2015/08/14 14:42:46
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 15:56:30
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 15:56:30
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 15:59:00
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 15:59:00
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:00:10
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:16:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:16:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:16:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:16:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 16:16:04
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 18:10:11
+*************************************************
+class controlador.ControladorVentanas
+javafx.scene.layout.AnchorPane cannot be cast to javafx.scene.layout.BorderPane 2015/08/14 18:17:49
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/14 18:50:52
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/14 18:56:23
+*************************************************
+class controlador.ControladorVentanas
+BorderPane@1c2d2fca[styleClass=root]is already set as root of another scene 2015/08/14 19:13:07
+*************************************************
+class controlador.ControladorVentanas
+BorderPane@1c2d2fca[styleClass=root]is already set as root of another scene 2015/08/14 19:13:07
+*************************************************
+class controlador.ControladorVentanas
+BorderPane@1c2d2fca[styleClass=root]is already set as root of another scene 2015/08/14 19:13:07
+*************************************************
+class controlador.ControladorVentanas
+BorderPane@1c2d2fca[styleClass=root]is already set as root of another scene 2015/08/14 19:13:07
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/14 19:13:44
+*************************************************
+class controlador.ControladorVentanas
+AnchorPane@3a0a768dis already inside a scene-graph and cannot be set as root 2015/08/14 19:15:31
+*************************************************
+class controlador.ControladorVentanas
+AnchorPane@3a0a768dis already inside a scene-graph and cannot be set as root 2015/08/14 19:15:31
+*************************************************
+class modelo.Conexion
+FATAL: la autentificaci?n password fall? para el usuario ?postgres? 2015/08/15 00:28:45
+*************************************************
+class modelo.Usuario
+null 2015/08/15 00:28:45
+*************************************************
+class modelo.Conexion
+null 2015/08/15 00:28:45
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/15 00:29:51
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/15 00:31:09
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/15 00:31:09
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/15 00:31:09
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/15 09:51:52
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/08/19 13:14:01
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/10/10 19:05:14
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/10/24 14:56:51
+*************************************************
+class controlador.ControladorVentanas
+Cannot call this method on primary stage 2015/10/24 15:04:11
+*************************************************
+class controlador.ControladorVentanas
+No controller specified.
+/C:/Users/Orbezo/workspace/pcmax2.4/bin/vista/fxml/Venta.fxml:99
+ 2015/11/03 17:36:51
+*************************************************
+class controlador.ControladorVentanas
+No controller specified.
+/C:/Users/Orbezo/workspace/pcmax2.4/bin/vista/fxml/Venta.fxml:99
+ 2015/11/03 17:36:51
+*************************************************
+class controlador.ControladorVentanas
+No controller specified.
+/C:/Users/Orbezo/workspace/pcmax2.4/bin/vista/fxml/Venta.fxml:99
+ 2015/11/03 17:36:51
+*************************************************
+class controlador.ControladorVentanas
+No controller specified.
+/C:/Users/Orbezo/workspace/pcmax2.4/bin/vista/fxml/Venta.fxml:99
+ 2015/11/03 17:36:51
+*************************************************
+class modelo.ExportExcelBaseDiagnosticos
+FATAL: la autentificaci?n password fall? para el usuario ?postgres? 2015/11/05 14:09:01
+*************************************************
+class modelo.Producto
+ERROR: llave duplicada viola restricción de unicidad «Key4»
+  Detail: Ya existe la llave (id_producto)=(2).
+  Where: sentencia SQL: «insert into producto(id_producto, id_categoria, id_marca, numero_de_parte, precio_1, precio_2, precio_3, descripcion,
+stock_maximo, stock_minimo)
+values (_codigo, clavecategoria, clavemarca, _numerodeparte, _precio1, _precio2, _precio3, _descripcion, _stockmaximo, _stockminimo)»
+función PL/pgSQL fn_agregarproducto(integer,integer,integer,character varying,real,real,real,character varying,integer,integer) en la línea 3 en sentencia SQL 2015/11/06 20:55:09
+*************************************************

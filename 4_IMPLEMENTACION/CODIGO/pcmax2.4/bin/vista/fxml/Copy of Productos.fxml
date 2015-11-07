@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorProducto">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" stroke="BLACK" strokeType="INSIDE" width="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.1904761904761903" endY="1.0" startX="0.6666666666666667" startY="0.6714285714285715">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#80808087" offset="0.8247422680412372" />
+                  <Stop color="#9e9e9e80" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="156.0" fitWidth="133.0" layoutX="997.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/robot49.png" />
+         </image>
+      </ImageView>
+      <ToolBar layoutX="3.0" layoutY="57.0" prefHeight="66.0" prefWidth="977.0" AnchorPane.topAnchor="57.0">
+        <items>
+          <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_insertar" prefHeight="69.0" prefWidth="124.0" text="Guardar" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/guardar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_actualizar" prefHeight="69.0" prefWidth="124.0" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/editar%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btnEliminar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_eliminar" prefHeight="69.0" prefWidth="124.0" text="Eliminar">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="53.0" fitWidth="321.0" pickOnBounds="true" translateX="150.0">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+        </items>
+      </ToolBar>
+      <Label layoutX="14.0" layoutY="151.0" text="Codigo:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtID" layoutX="73.0" layoutY="147.0" prefHeight="25.0" prefWidth="135.0" />
+      <ComboBox fx:id="cbCategoria" layoutX="632.0" layoutY="147.0" prefHeight="25.0" prefWidth="171.0" promptText="Selecciona categoria" />
+      <Label layoutX="551.0" layoutY="152.0" text="Categoria:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="575.0" layoutY="204.0" text="Marca:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="cbMarca" layoutX="632.0" layoutY="200.0" prefHeight="25.0" prefWidth="171.0" promptText="Selecciona Marca" />
+      <Label layoutX="617.0" layoutY="256.0" text="Numero de parte:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtNumParte" layoutX="742.0" layoutY="251.0" prefHeight="25.0" prefWidth="199.0" />
+      <Label layoutX="212.0" layoutY="152.0" text="Descripción:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextArea fx:id="txtDescripcion" layoutX="300.0" layoutY="143.0" prefHeight="88.0" prefWidth="228.0" />
+      <Label layoutX="15.0" layoutY="187.0" text="Existencias:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtExistencias" layoutX="102.0" layoutY="183.0" prefHeight="25.0" prefWidth="105.0" />
+      <TextField fx:id="txtPrecio1" layoutX="61.0" layoutY="253.0" />
+      <TextField fx:id="txtPrecio2" layoutX="258.0" layoutY="253.0" />
+      <TextField fx:id="txtPrecio3" layoutX="448.0" layoutY="253.0" />
+      <Label layoutX="17.0" layoutY="226.0" text="Precio:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="255.0" text="\$">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="255.0" text="\$">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="433.0" layoutY="255.0" text="\$">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="108.0" layoutY="278.0" text="(Precio 1)">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="278.0" text="(Precio 2)">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="278.0" text="(Precio 3)">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="961.0" layoutY="195.0" text="Stock:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="1028.0" layoutY="269.0" text="(Minimo)" />
+      <Label layoutX="1026.0" layoutY="216.0" text="(Maximo)" />
+      <TextField fx:id="txtStockMax" layoutX="1019.0" layoutY="191.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtStockMin" layoutX="1019.0" layoutY="244.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button fx:id="btnCategoria" layoutX="818.0" layoutY="147.0" mnemonicParsing="false" onAction="#clickCategoria" text="Agregar categoria" />
+      <Button fx:id="btnMarca" layoutX="826.0" layoutY="199.0" mnemonicParsing="false" onAction="#clickMarca" text="Agregar marca" />
+      <TableView fx:id="tvProductos" layoutX="16.0" layoutY="302.0" onMouseClicked="#click_TableView" prefHeight="223.0" prefWidth="1099.0">
+        <columns>
+          <TableColumn fx:id="tcCodigo" prefWidth="75.0" text="Codigo" />
+          <TableColumn fx:id="tcDescripcion" prefWidth="328.0" text="Descripción" />
+            <TableColumn fx:id="tcMarca" text="Marca" />
+            <TableColumn fx:id="tcCategoria" prefWidth="120.0" text="Categoria" />
+            <TableColumn fx:id="tcNumParte" prefWidth="172.0" text="Num. de parte" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtBuscador" layoutX="809.0" layoutY="17.0" onKeyReleased="#buscarTexto" promptText="Buscar producto..." AnchorPane.leftAnchor="809.0" AnchorPane.topAnchor="17.0" />
+      <Pagination fx:id="paginador" layoutX="15.0" layoutY="299.0" pageCount="8100" prefHeight="270.0" prefWidth="1099.0" />
+      <ImageView fitHeight="43.0" fitWidth="94.0" layoutX="760.0" layoutY="8.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+         <image>
+            <Image url="@../imagenes/buscar%20(2).png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="ckbRegistrosInactivos" layoutX="803.0" layoutY="530.0" mnemonicParsing="false" onAction="#click_inactivos" text="Mostrar registros inactivos" />
+      <Label layoutX="4.0" layoutY="-3.0" text="Productos">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerY="0.5" radius="0.8837209302325582">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#403e3e" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblMensaje" layoutX="300.0" layoutY="20.0" prefHeight="25.0" prefWidth="394.0" textFill="#d80f0f">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMensaje2" layoutX="14.0" layoutY="531.0" prefHeight="25.0" prefWidth="394.0" textFill="#bf3e3e">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

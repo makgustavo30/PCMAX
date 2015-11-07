@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<javafx.scene.layout.AnchorPane fx:id="contenedorPAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <children>
+    <TabPane tabClosingPolicy="UNAVAILABLE" tabMaxHeight="30.0" tabMinHeight="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-122.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Por Fecha">
+          <content>
+            <AnchorPane id="Content">
+              <children>
+                <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <HBox fx:id="contentFechaDia" alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                      <children>
+                        <Label text="Fecha:" />
+                        <Button fx:id="verReporteDiaBtn" mnemonicParsing="false" styleClass="small-button" text="Ver" />
+                        <Label fx:id="notifDia" styleClass="notif">
+                          <HBox.margin>
+                            <Insets left="20.0" />
+                          </HBox.margin>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <TableView fx:id="reporteDiarTB" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                      <columns>
+                        <TableColumn fx:id="repDiaPeriodo" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" text="Fecha" />
+                        <TableColumn fx:id="repDiaIngreso" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Ingreso" />
+                        <TableColumn fx:id="repDiaEgreso" maxWidth="230.0" minWidth="150.0" prefWidth="150.0" text="Egreso" />
+                        <TableColumn fx:id="repDiaSaldo" minWidth="150.0" prefWidth="150.0" text="Saldo" />
+                      </columns>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                      </GridPane.margin>
+                    </TableView>
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="NEVER" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="-Infinity" prefHeight="70.0" vgrow="NEVER" />
+                    <RowConstraints vgrow="ALWAYS" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+              <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Por Semana">
+          <content>
+            <AnchorPane id="Content">
+              <children>
+                <GridPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <children>
+                    <HBox fx:id="contentFechaSemana" alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                      <children>
+                        <Label text="Seleccionar un día de la semana:" />
+                        <Button fx:id="verReporteSemanaBtn" mnemonicParsing="false" styleClass="small-button" text="Ver" />
+                        <Label fx:id="notifSemana" styleClass="notif">
+                          <HBox.margin>
+                            <Insets left="15.0" />
+                          </HBox.margin>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <TableView id="reporteDiarTB" fx:id="reporteSemanaTB" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                      <columns>
+                        <TableColumn fx:id="repSemanaPeriodo" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" text="Día" />
+                        <TableColumn fx:id="repSemanaIngreso" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Ingreso" />
+                        <TableColumn fx:id="repSemanaEgreso" maxWidth="230.0" minWidth="150.0" prefWidth="150.0" text="Egreso" />
+                        <TableColumn fx:id="repSemanaSaldo" minWidth="150.0" prefWidth="150.0" text="Saldo" />
+                      </columns>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                      </GridPane.margin>
+                    </TableView>
+                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                      <children>
+                        <Label text="Ingreso Total:" />
+                        <Label fx:id="ingresoSemanaLabel" styleClass="su-cambio" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Egreso Total:" />
+                        <Label fx:id="egresoSemanaLabel" styleClass="su-adeudo" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Saldo:" />
+                        <Label fx:id="saldoSemanaLabel" styleClass="su-pago" text="\$0.00" />
+                      </children>
+                      <padding>
+                        <Insets left="20.0" />
+                      </padding>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" />
+                      </GridPane.margin>
+                    </HBox>
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="NEVER" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="-Infinity" prefHeight="70.0" vgrow="NEVER" />
+                    <RowConstraints vgrow="ALWAYS" />
+                    <RowConstraints vgrow="ALWAYS" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Por Mes">
+          <content>
+            <AnchorPane id="Content">
+              <children>
+                <GridPane prefWidth="702.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <children>
+                    <HBox id="contentFechaSemana" fx:id="contentFechaMes" alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                      <children>
+                        <Label text="Seleccionar cualquier día del mes:" />
+                        <Button id="verReporteSemanaBtn" fx:id="verReporteMesBtn" mnemonicParsing="false" styleClass="small-button" text="Ver" />
+                        <Label id="notifSemana" fx:id="notifMes" styleClass="notif">
+                          <HBox.margin>
+                            <Insets left="15.0" />
+                          </HBox.margin>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <TableView id="reporteDiarTB" fx:id="reporteMesTB" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                      <columns>
+                        <TableColumn fx:id="repMesPeriodo" maxWidth="280.0" minWidth="240.0" prefWidth="250.0" text="Periodo" />
+                        <TableColumn fx:id="repMesIngreso" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Ingreso" />
+                        <TableColumn fx:id="repMesEgreso" maxWidth="230.0" minWidth="150.0" prefWidth="150.0" text="Egreso" />
+                        <TableColumn fx:id="repMesSaldo" minWidth="150.0" prefWidth="150.0" text="Saldo" />
+                      </columns>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                      </GridPane.margin>
+                    </TableView>
+                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                      <children>
+                        <Label text="Ingreso Total:" />
+                        <Label id="ingresoSemanaLabel" fx:id="ingresoMesLabel" styleClass="su-cambio" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Egreso Total:" />
+                        <Label id="egresoSemanaLabel" fx:id="egresoMesLabel" styleClass="su-adeudo" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Saldo:" />
+                        <Label id="saldoSemanaLabel" fx:id="saldoMesLabel" styleClass="su-pago" text="\$0.00" />
+                      </children>
+                      <padding>
+                        <Insets left="20.0" />
+                      </padding>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" />
+                      </GridPane.margin>
+                    </HBox>
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="NEVER" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="-Infinity" prefHeight="70.0" vgrow="NEVER" />
+                    <RowConstraints vgrow="ALWAYS" />
+                    <RowConstraints vgrow="ALWAYS" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Por Año">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <GridPane prefWidth="702.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                  <children>
+                    <HBox id="contentFechaSemana" alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                      <children>
+                        <Label text="A partir del año:" />
+                        <ComboBox fx:id="anioInicioCmb" prefWidth="100.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <Label text="al año" />
+                        <ComboBox fx:id="anioFinCmb" prefWidth="100.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <Button id="verReporteSemanaBtn" fx:id="verReporteAniosBtn" mnemonicParsing="false" styleClass="small-button" text="Ver" />
+                        <Label id="notifSemana" fx:id="notifAnio" styleClass="notif">
+                          <HBox.margin>
+                            <Insets left="15.0" />
+                          </HBox.margin>
+                        </Label>
+                      </children>
+                    </HBox>
+                    <TableView id="reporteDiarTB" fx:id="reporteAnioTB" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                      <columns>
+                        <TableColumn fx:id="repAnioPeriodo" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" text="Periodo" />
+                        <TableColumn fx:id="repAnioIngreso" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Ingreso" />
+                        <TableColumn fx:id="repAnioEgreso" maxWidth="230.0" minWidth="150.0" prefWidth="150.0" text="Egreso" />
+                        <TableColumn fx:id="repAnioSaldo" minWidth="150.0" prefWidth="150.0" text="Saldo" />
+                      </columns>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" top="10.0" />
+                      </GridPane.margin>
+                    </TableView>
+                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                      <children>
+                        <Label text="Ingreso Total:" />
+                        <Label id="ingresoSemanaLabel" fx:id="ingresoAnioLabel" styleClass="su-cambio" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Egreso Total:" />
+                        <Label id="egresoSemanaLabel" fx:id="egresoAnioLabel" styleClass="su-adeudo" text="\$0.00" />
+                        <Separator prefWidth="10.0" />
+                        <Label text="Saldo:" />
+                        <Label id="saldoSemanaLabel" fx:id="saldoAnioLabel" styleClass="su-pago" text="\$0.00" />
+                      </children>
+                      <padding>
+                        <Insets left="20.0" />
+                      </padding>
+                      <GridPane.margin>
+                        <Insets bottom="20.0" />
+                      </GridPane.margin>
+                    </HBox>
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" />
+                    <ColumnConstraints hgrow="NEVER" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="-Infinity" prefHeight="70.0" vgrow="NEVER" />
+                    <RowConstraints vgrow="ALWAYS" />
+                    <RowConstraints vgrow="ALWAYS" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@../../css/GeneralCss.css" />
+  </stylesheets>
+</javafx.scene.layout.AnchorPane>

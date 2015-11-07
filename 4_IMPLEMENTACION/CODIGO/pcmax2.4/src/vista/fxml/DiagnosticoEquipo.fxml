@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorDiagnosticoEquipo">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="570.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fill>
+            <LinearGradient endX="0.7285714285714285" endY="0.09999999999999998" startX="0.6476190476190475" startY="0.7190476190476189">
+               <stops>
+                  <Stop color="#2bbff5" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="4.0" layoutY="-3.0" text="Diagnostico Equipos" textFill="#d80f0fe5">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="3.0" layoutY="57.0" prefHeight="79.0" prefWidth="981.0" AnchorPane.topAnchor="57.0">
+         <items>
+            <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_insertar" prefHeight="69.0" prefWidth="124.0" text="Guardar">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/file_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#click_actualizar" prefHeight="69.0" prefWidth="124.0" text="Editar">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/file_edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAbrirexcel" contentDisplay="TOP" mnemonicParsing="false" onAction="#Abrirexcel" prefHeight="69.0" prefWidth="124.0" text="Abrir Reporte">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../imagenes/647702-excel-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="53.0" fitWidth="321.0" pickOnBounds="true" translateX="150.0">
+               <image>
+                  <Image url="@../imagenes/logodibujos.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="141.0" fitWidth="173.0" layoutX="984.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/robot49.png" />
+         </image>
+      </ImageView>
+      <TitledPane animated="false" layoutX="4.0" layoutY="137.0" prefHeight="210.0" prefWidth="1120.0" text="Datos Generales de Diagnosticos" AnchorPane.leftAnchor="4.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="1098.0">
+               <children>
+                  <Label layoutX="84.0" layoutY="10.0" text="Tipo de equipo:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="763.0" layoutY="10.0" text="Sistema Operativo:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="49.0" text="Daños presentados:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="400.0" layoutY="10.0" text="Sistema de equipo:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTipoEquipo" layoutX="206.0" layoutY="4.0" prefHeight="27.0" prefWidth="162.0" />
+                  <TextField fx:id="txtSistemaEquipo" layoutX="549.0" layoutY="4.0" prefHeight="27.0" prefWidth="162.0" />
+                  <TextField fx:id="txtSistemaOpe" layoutX="913.0" layoutY="4.0" prefHeight="27.0" prefWidth="162.0" />
+                  <TextField fx:id="txtId" disable="true" layoutX="26.0" layoutY="4.0" prefHeight="27.0" prefWidth="43.0" />
+                  <Label layoutX="5.0" layoutY="9.0" text="ID:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txtDiagnostico" layoutX="786.0" layoutY="73.0" prefHeight="63.0" prefWidth="287.0" />
+                  <TextArea fx:id="txtFallas" layoutX="441.0" layoutY="74.0" prefHeight="62.0" prefWidth="270.0" />
+                  <TextArea fx:id="txtDanios" layoutX="84.0" layoutY="75.0" prefHeight="60.0" prefWidth="283.0" />
+                  <Label layoutX="399.0" layoutY="49.0" text="Fallas presentadas:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="806.0" layoutY="49.0" text="Diagnostico:">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtBuscador" layoutX="901.0" layoutY="135.0" onKeyReleased="#buscarTexto" prefHeight="27.0" prefWidth="162.0" promptText="Buscar Diagnostico..." AnchorPane.leftAnchor="901.0" AnchorPane.topAnchor="135.0" />
+                  <ImageView fitHeight="43.0" fitWidth="94.0" layoutX="841.0" layoutY="138.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/file_search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content>
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </TitledPane>
+      <TableView fx:id="tvDiagnostico" layoutX="4.0" layoutY="346.0" onMouseClicked="#click_TableView" prefHeight="179.0" prefWidth="1123.0">
+         <columns>
+            <TableColumn fx:id="tcEquipo" prefWidth="147.0" text="Tipo de equipo" />
+            <TableColumn fx:id="tcSistemaE" prefWidth="113.0" text="Sistema de equipo" />
+            <TableColumn fx:id="tcSistemaO" prefWidth="158.0" text="Sistema Operativo" />
+            <TableColumn fx:id="tcDanios" prefWidth="168.0" text="Daños presentados" />
+            <TableColumn fx:id="tcFallas" prefWidth="252.0" text="Fallas presentadas" />
+            <TableColumn fx:id="tcDiagnostico" prefWidth="280.0" text="Diagnostivo" />
+         </columns>
+      </TableView>
+      <Pagination fx:id="paginador" layoutX="4.0" layoutY="347.0" pageCount="8100" prefHeight="219.0" prefWidth="1120.0" />
+      <Label fx:id="lblMensaje2" layoutX="61.0" layoutY="530.0" prefHeight="17.0" prefWidth="317.0" />
+      <CheckBox fx:id="ckbInactivos" layoutX="803.0" layoutY="530.0" mnemonicParsing="false" onAction="#click_inactivos" text="Mostrar registros inactivos" />
+      <Label fx:id="lblMensaje" layoutX="14.0" layoutY="526.0" prefHeight="25.0" prefWidth="394.0" textFill="#d80f0f">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="controlsfx-8.20.8.jar"/>
+	<classpathentry kind="lib" path="controlsfx-8.20.9.jar"/>
+	<classpathentry kind="lib" path="controlsfx-samples-8.20.9.jar"/>
+	<classpathentry kind="lib" path="dsn.jar"/>
+	<classpathentry kind="lib" path="extensionIO_v1.07.jar"/>
+	<classpathentry kind="lib" path="extfx-0.3.jar"/>
+	<classpathentry kind="lib" path="fxsampler-1.0.8.jar"/>
+	<classpathentry kind="lib" path="imap.jar"/>
+	<classpathentry kind="lib" path="javafx-dialogs-0.0.4.jar"/>
+	<classpathentry kind="lib" path="jfxrt.jar"/>
+	<classpathentry kind="lib" path="jxl.jar"/>
+	<classpathentry kind="lib" path="log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="mail.jar"/>
+	<classpathentry kind="lib" path="mailapi.jar"/>
+	<classpathentry kind="lib" path="openjfx-dialogs-1.0.3.jar"/>
+	<classpathentry kind="lib" path="PasswordDemo.jnlp"/>
+	<classpathentry kind="lib" path="pop3.jar"/>
+	<classpathentry kind="lib" path="postgresql-9.2-1000.jdbc4.jar"/>
+	<classpathentry kind="lib" path="postgresql-9.4-1201.jdbc4.jar"/>
+	<classpathentry kind="lib" path="smtp.jar"/>
+	<classpathentry kind="lib" path="substance.jar"/>
+	<classpathentry kind="lib" path="swt-debug.jar"/>
+	<classpathentry kind="lib" path="swt.jar"/>
+	<classpathentry kind="lib" path="jasperreports-5.0.1.jar"/>
+	<classpathentry kind="lib" path="commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="groovy-all-1.8.6.jar"/>
+	<classpathentry kind="lib" path="itext-2.1.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
