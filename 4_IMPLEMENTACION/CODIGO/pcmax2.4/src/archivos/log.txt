@@ -1633,3 +1633,6 @@ stock_maximo, stock_minimo)
 values (_codigo, clavecategoria, clavemarca, _numerodeparte, _precio1, _precio2, _precio3, _descripcion, _stockmaximo, _stockminimo)»
 función PL/pgSQL fn_agregarproducto(integer,integer,integer,character varying,real,real,real,character varying,integer,integer) en la línea 3 en sentencia SQL 2015/11/06 20:55:09
 *************************************************
+class modelo.ExportExcelBaseDiagnosticos
+FATAL: la autentificaci?n password fall? para el usuario ?postgres? 2015/11/07 15:40:47
+*************************************************
